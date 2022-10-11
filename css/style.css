@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** font-family: 'Inter', sans-serif; */
+
+.header-cf{
+    position: relative;
+background-color: #F08122;
+}
+
+.logo-cf img    {
+    position: absolute;
+    width: 236px;
+    height: 130px;
+    left: 14px;
+    top: 9px;
+}
+
+.header-bar{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    align-items: center;
+    height: 74px;
+    padding-right: 29px;
+    gap: 19px;
+    width: 100%;
+}
+
+.nav-bar{
+    height: 82px;
+    width: 100%;
+    background-color: #414141f2
+}
+
+.ul-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 28px;
+    font-family: 'Inter:wght@500', sans-serif;
+    height: 82px;
+    padding-right: 142px;
+    padding-left: 308px;
+    gap: 28px
+    ;
+}
+
+.ul-bar li{
+    list-style: none;
+}
+
+.ul-bar li a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar .ul-bar .contacto{
+    text-decoration: underline;
+}
+
+.firstrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+h2{
+    display: flex;
+    width: 600px;
+    margin: 31px;
+    font-family: 'Inter:wght@500', sans-serif;
+    font-size: 44px;
+    text-align: center;
+    
+}
+
+.slideframe{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.slideframe ul{
+    display: flex;
+    animation: slide 14s infinite alternate ease-in-out;
+    width: 400%;
+}
+.slideframe li{
+    list-style: none;
+    width: 100%;
+}
+.slideframe img{
+    width: 100%;
+}
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
+.botline{
+    display: flexbox;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 1440px;
+    height: 65px;
+    top: 156px;
+}
+.botline p{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    width: 302px;
+    margin-right: 1140px;
+    margin-left: 140px;
+    font-family: 'Inter:wght@500', sans-serif;
+    color: white;
+    font-size: 35px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap: 50px;
+    margin: 39px 80px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.container .card {
+    display: grid;
+    grid-template-columns: 4fr;
+    Width: 289px;
+    Height: 322px;
+    overflow: hidden; 
+    background-color: #F08122;
+}
+
+.container .card img {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 6px;
+    padding: 6px;
+    width: 277px;
+    height: 310px;
+}
+
+.container .card p{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    color: white;
+    height: 30px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    margin: auto;
+    background-color: #414141;
+}
+
+.footer .datosfooter{
+    width: 211px;
+    height: 317px;
+    color: white;
+    padding: 20px;
+    gap: 10px;
+}
+
+.footer .footer1{
+    font-family: 'Inter:wght@500', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer2{
+    font-family: 'Inter:wght@500', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer2 h5{
+    margin: 8px auto;
+    font-family: 'Inter:wght@500', sans-serif;
+    font-size: 20px;
+}
+
+.footer .footer3{
+    font-family: 'Inter:wght@500', sans-serif;
+    font-size: 20px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
