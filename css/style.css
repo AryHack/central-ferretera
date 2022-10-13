@@ -6,9 +6,14 @@
 
 /** font-family: 'Inter', sans-serif; */
 
-.header-cf{
-    position: relative;
-background-color: #F08122;
+.header {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "a1 a1 a1 a1 a1 a1 a2 a3"
+    "b1 b1 b1 b1 b1 b1 b1 b1";
+    background-color: #F08122;
 }
 
 .logo-cf img    {
@@ -19,24 +24,21 @@ background-color: #F08122;
     top: 9px;
 }
 
-.header-bar{
+.header-iconos {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    align-items: center;
     height: 74px;
-    padding-right: 29px;
     gap: 19px;
-    width: 100%;
+    margin-top: 10px;
+    grid-area: a3;
 }
 
-.nav-bar{
-    height: 82px;
+.navbar{
+    grid-area: b1;
     width: 100%;
     background-color: #414141f2
 }
 
-.ul-bar{
+.navbar ul{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -45,40 +47,34 @@ background-color: #F08122;
     font-size: 28px;
     font-family: 'Inter:wght@500', sans-serif;
     height: 82px;
-    padding-right: 142px;
-    padding-left: 308px;
-    gap: 28px
-    ;
+    padding-right: 103px;
+    padding-left: 300px;
+    gap: 28px;
+    flex-grow: 5px;
 }
 
-.ul-bar li{
+.navbar li{
+    grid-area: b1;
     list-style: none;
 }
 
-.ul-bar li a{
+.navbar li a{
+    grid-area: b1;
     color: white;
+    padding: 10px;
+    border-radius: 8px;
     text-decoration: none;
+    transition: background, color ,300ms;
+    cursor: pointer;
 }
 
-.nav-bar .ul-bar .contacto{
+.navbar li a:hover{
+    opacity: 4.6;
+    background:#F08122;
+}
+
+.navbar .contacto{
     text-decoration: underline;
-}
-
-.firstrow{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-}
-
-h2{
-    display: flex;
-    width: 600px;
-    margin: 31px;
-    font-family: 'Inter:wght@500', sans-serif;
-    font-size: 44px;
-    text-align: center;
-    
 }
 
 .slideframe{
@@ -132,85 +128,63 @@ h2{
     font-size: 35px;
 }
 
+main{
+    max-width: 1440px;
+}
+.firstrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+h2{
+    display: flex;
+    max-width: 1440px;
+    margin: 31px;
+    font-family: 'Inter:wght@500', sans-serif;
+    font-size: 44px;
+    text-align: center;
+    
+}
+
 .container{
     display: grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-gap: 50px;
-    margin: 39px 80px;
-    width: 80%;
     max-width: 1200px;
+    grid-template-columns: repeat(4,1fr);
+    margin: 90px;
+    gap: 39px 43px;
 }
 
-.container .card {
-    display: grid;
-    grid-template-columns: 4fr;
-    Width: 289px;
-    Height: 322px;
-    overflow: hidden; 
+.card {
     background-color: #F08122;
-}
-
-.container .card img {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 6px;
-    padding: 6px;
-    width: 277px;
-    height: 310px;
-}
-
-.container .card p{
+    width: 289px;
+    height: 322px;
+    position: relative;
     display: flex;
-    justify-content: baseline;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    max-width: 100%;
+    max-height: auto;
+}
+
+.card p{
+    width: 261px;
+    height: 50px;
+    position: relative;
+    margin: 247px 3px -33px 1px;
+    font-size: 40px;
     color: white;
-    height: 30px;
+    font-family: 'Inter:wght@400', sans-serif;
 }
 
-.footer{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    width: 100%;
-    margin: auto;
-    background-color: #414141;
-}
-
-.footer .datosfooter{
-    width: 211px;
-    height: 317px;
-    color: white;
-    padding: 20px;
-    gap: 10px;
-}
-
-.footer .footer1{
-    font-family: 'Inter:wght@500', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer .footer2{
-    font-family: 'Inter:wght@500', sans-serif;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer2 h5{
-    margin: 8px auto;
-    font-family: 'Inter:wght@500', sans-serif;
-    font-size: 20px;
-}
-
-.footer .footer3{
-    font-family: 'Inter:wght@500', sans-serif;
-    font-size: 20px;
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
+@media (max-width: 576px){
+    .container 
 }
