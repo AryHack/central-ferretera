@@ -26,7 +26,6 @@
 
 .header-iconos {
     display: flex;
-    height: 74px;
     gap: 19px;
     margin-top: 10px;
     grid-area: a3;
@@ -35,7 +34,7 @@
 .navbar{
     grid-area: b1;
     width: 100%;
-    background-color: #414141f2
+    background-color: #404040f2
 }
 
 .navbar ul{
@@ -76,7 +75,6 @@
 .navbar .contacto{
     text-decoration: underline;
 }
-
 .slideframe{
     width: 100%;
     height: auto;
@@ -109,23 +107,21 @@
 }
 
 .botline{
-    display: flexbox;
-    flex-wrap: wrap;
-    background-color: black;
-    width: 1440px;
-    height: 65px;
-    top: 156px;
-}
-.botline p{
     display: flex;
     align-items: center;
     height: 65px;
-    width: 302px;
-    margin-right: 1140px;
-    margin-left: 140px;
+    background-color: black;
+}
+.botline p{
+    padding: 7px;
     font-family: 'Inter:wght@500', sans-serif;
     color: white;
     font-size: 35px;
+}
+
+.botline img{
+    padding: 15px;
+    margin-left: 65px;
 }
 
 main{
@@ -138,7 +134,7 @@ main{
     height: auto;
 }
 
-h2{
+.firstrow h2{
     display: flex;
     max-width: 1440px;
     margin: 31px;
@@ -150,9 +146,8 @@ h2{
 
 .container{
     display: grid;
-    max-width: 1200px;
     grid-template-columns: repeat(4,1fr);
-    margin: 90px;
+    margin: 37px;
     gap: 39px 43px;
 }
 
@@ -185,6 +180,249 @@ h2{
     font-family: 'Inter:wght@400', sans-serif;
 }
 
-@media (max-width: 576px){
-    .container 
+.form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas:
+    "co cont";
+}
+
+.container-fluid{
+    margin-top: 10px;
+    font-size: 22px;
+}
+.mapacontacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mapacontacto img{
+    width: 26rem;
+    height: 26rem;
+    border-radius: 15px;
+}
+
+.containerdes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "q q"
+    "va va"
+    "m vi";
+}
+.somos{
+    grid-area: q;
+    text-align: center;
+}
+.valores{
+    grid-area: va;
+    text-align: center;
+}
+
+.mision{
+    grid-area: m;
+    text-align: center;
+}
+.vision{
+    grid-area: vi;
+    text-align: center;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "logo aten bah"
+    "copy copy copy";
+    background-color: #404040f2 ;
+    height: 403px;
+    font-family: 'Inter:wght@400', sans-serif;
+    color: white;
+}  
+
+footer .logo-cf{
+    position: absolute;
+    margin-left: 20px;
+}
+
+.datosfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    font-size: 22px;
+    margin-top: 80px;
+}
+
+.atentionfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    font-size: 22px;
+    margin-top: 50px;
+}
+span{
+    padding: 10px;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    height: 305px;
+    font-size: 22px;
+    margin-top: 36px;
+}
+.map p{
+    text-decoration: underline;
+    width: 100vh;
+}
+.mapfooter{
+    position: absolute;
+    Width: 236px;
+    border-radius: 13px;
+    margin-left: 20px;
+}
+footer .copyright{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    grid-area: copy;
+}
+
+.copyright ul{
+    display: flex;
+    gap: 250px;
+    font-size: 20px;
+    list-style: none;
+}
+
+@media (max-width:480px){
+    .logo-cf img{
+        position: absolute;
+        width: 122px;
+        height: 76px;
+        left: 8px;
+        top: 11px;
+    }
+
+    .header-iconos{
+        margin-right: 10px;
+        gap: 6px;
+    }
+
+    .header-iconos img{
+        width: 25px;
+    }
+
+    .navbar{
+        height: 55px;
+    }
+
+    .navbar ul{
+        font-size: 19px;
+        height: 55px;
+        padding: 1px;
+        padding-left: 125px;
+        gap: 7px;
+    }
+
+    .botline {
+        height: 30px;
+        margin-bottom: 30px;
+    }
+    .botline img {
+        padding: 5px;
+        margin-left: 65px;
+        height: 28px;
+    }
+    .botline p {
+        font-size: 22px;
+    }
+    .firstrow h2{
+        font-size: 30px;
+        margin: 15px;
+}
+    .container{
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        margin-top: inherit;
+        gap: 12px 12px;
+}
+    .card{
+        width: 95px;
+        height: 107px;
+}
+.card p {
+    width: 49px;
+    margin-top: 49px;
+    margin-left: -37px;
+    height: 24px;
+    position: relative;
+    font-size: 50px;
+}
+.mapacontacto {
+    gap: 15px;
+}
+.mapacontacto img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+}
+footer .logo-cf img {
+    position: absolute;
+    width: 77px;
+    height: 49px;
+    left: 6px;
+    top: 5px;
+}
+footer {
+    height: 155px;
+}
+.datosfooter {
+    height: 88px;
+    font-size: 12px;
+    margin-top: 56px;
+    margin-left: 19px;
+}
+.atentionfooter {
+    height: 142px;
+    font-size: 12px;
+    margin-top: 9px;
+}
+.map {
+    height: 140px;
+    font-size: 12px;
+    margin-top: 9px;
+}
+.mapfooter {
+    Width: 90px;
+    border-radius: 13px;
+    margin-left: 0px;
+}
+.mapfooter img{
+    width: 87px;
+    height: 85px;
+}
+.map p{
+    width: 111%;
+}
+
+footer .copyright{
+    height: 26px;
+}
+.copyright ul {
+    gap: 63px;
+    font-size: 8px;
+    list-style: none;
+}
 }
