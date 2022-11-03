@@ -1,0 +1,130 @@
+@media (max-width:480px){
+    header{
+    .logo-cf img{
+        position: absolute;
+        z-index: 2;
+        width: 131px;
+        height: 75px;
+        left: 15px;
+        top: 1px;
+    }
+    .header-iconos{
+        display: flex;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .header-iconos img{
+        width: 27px;
+    }
+    .nav_label {
+        display: block;
+        right: 1rem;
+        top: 2.5rem;
+        position: absolute;
+    }
+    .navbar{
+        position: absolute;
+        top: 5rem;
+        bottom: -567px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.5s ease-in-out;
+    }
+    .nav_input:checked + .navbar{
+        z-index: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .navbar ul{
+        margin-top: 1.5rem;
+        font-size: 36px;
+        gap: 80px;
+        padding-left: unset;
+        padding-right: unset;
+
+    }
+    }
+    main{
+    .botline {
+        height: 30px;
+    }
+    .botline img {
+        padding: 5px;
+        margin-left: 65px;
+        height: 28px;
+    }
+    .botline p {
+        font-size: 22px;
+    }
+    .firstrow h2{
+        font-size: 30px;
+        margin: 15px;
+}
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 12px;
+    .card{
+        width: 183px;
+        height: 183px;
+    }
+    .card p{
+    margin-top: 111px;
+    margin-left: 5px;
+    font-size: 32px;
+    }
+    }
+.mapacontacto {
+    gap: 15px;
+}
+.mapacontacto img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+}
+.portadawho{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 100%;
+    }
+}
+    }
+
+footer{
+    .containerfooter{
+        padding: 3px;
+    }
+    .data{
+    font-size: 12px;
+    padding: unset;
+    img {
+        z-index: 1;
+        width: 77px;
+        height: 49px;
+        left: 10px;
+    }
+}
+.atentionfooter {
+    font-size: 12px;
+}
+
+.mapfooter {
+    padding: unset;
+    img{
+        width: 87px;
+        height: 85px;
+    }
+    p{
+    font-size: 12px;
+    text-decoration: underline;
+    }
+}
+.copyright{
+    margin-top: 5px;
+    ul{
+    gap: 63px;
+    font-size: 7px;
+    list-style: none;
+    }
+}
+}
+}

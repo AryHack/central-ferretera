@@ -1,0 +1,48 @@
+main{
+    .botline{
+        display: flex;
+        align-items: center;
+        height: 65px;
+        background-color: black;
+        p{
+            padding: 7px;
+            font-family: 'Inter:wght@500', sans-serif;
+            color: white;
+            font-size: 35px; 
+        }
+        img{
+            padding: 15px;
+            margin-left: 65px;
+        }
+    }
+    .containerdes{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "q q"
+        "va va"
+        "m vi";
+        padding: 20px;
+        gap: 20px;
+        .somos{
+            grid-area: q;
+            text-align: center;
+        }
+        .valores{
+            grid-area: va;
+            text-align: center;
+            ul{
+                list-style: none;
+            }
+        }
+        .mision{
+            grid-area: m;
+            text-align: center;
+        }
+        .vision{
+            grid-area: vi;
+            text-align: center;
+        }
+    }
+}

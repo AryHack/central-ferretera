@@ -1,0 +1,57 @@
+footer{
+    .containerfooter{
+    display: grid;
+    grid-template-areas: 
+    "dat ate bah"
+    "copy copy copy";
+    background-color: #404040f2 ;
+    font-size: 24px;
+    font-family: 'Inter:wght@400', sans-serif;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    }
+    .data{
+        grid-area: dat;
+        padding: 1rem;
+        p{
+            margin-top: 8px;
+        }
+    }
+    .atentionfooter{
+        grid-area: ate;
+        @include props-flex (column, center, center);
+        padding: 1rem;
+        ul{
+            @include props-flex (column, center, center);
+            list-style: none;
+            gap: 10px;
+        }
+    }
+    .mapfooter{
+        grid-area: bah;
+        @include props-flex (column, center, center);
+        padding: 1rem;
+        img{
+            width: 13rem;
+            height: 12rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+        p{
+            text-decoration: underline;
+        }
+    }
+    .copyright{
+        grid-area: copy;
+        background-color: black;
+        width: 100%;
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 220px;
+            font-size: 19px;
+            list-style: none;
+        }
+    }
+}

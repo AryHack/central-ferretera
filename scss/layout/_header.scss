@@ -1,0 +1,63 @@
+
+header{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "a1 a1 a1 a1 a1 a1 a2 a3"
+    "b1 b1 b1 b1 b1 b1 b1 b1";
+    background-color: $color-primario;
+    .logo-cf img{
+        position: absolute;
+        left: 64px;
+        top: 12px;
+        z-index: 2;
+    }
+    .header-iconos{
+        margin-top: 10px;
+        margin-left: 2rem;
+        grid-area: a3;
+    }
+    .nav_input:checked + .navbar{
+        background-color: $color-secundario;
+    }
+    .nav_label, .nav_input{
+        display: none;
+    }
+.navbar{
+    grid-area: b1;
+    width: 100%;
+    background-color:$color-secundario;
+    ul{
+        @include props-flex (row, center, center);
+        flex-wrap: wrap;
+        font-size: 28px;
+        font-family: 'Inter:wght@500', sans-serif;
+        height: 82px;
+        padding-right: 103px;
+        padding-left: 300px;
+        gap: 28px;
+        flex-grow: 5px; 
+    }
+    li{
+        grid-area: b1;
+        list-style: none;
+    }
+    li a{
+        grid-area: b1;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background, color ,300ms;
+        cursor: pointer;
+    }
+    li a:hover{
+        opacity: 4.6;
+        background: $color-primario;
+    }
+    .contacto{
+        text-decoration: underline;
+    }
+}
+}

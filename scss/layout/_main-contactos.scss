@@ -1,0 +1,36 @@
+main{
+    .botline{
+        display: flex;
+        align-items: center;
+        height: 65px;
+        background-color: black;
+        p{
+            padding: 7px;
+            font-family: 'Inter:wght@500', sans-serif;
+            color: white;
+            font-size: 35px; 
+        }
+        img{
+            padding: 15px;
+            margin-left: 65px;
+        }
+    }
+    .form{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "co"
+        "cont";
+        margin-top: 10px;
+    }
+    .mapacontacto{
+        @include props-flex (column, center, center);
+        gap: 40px;
+        img{
+            width: 26rem;
+            height: 26rem;
+            border-radius: 15px;
+        }
+    }
+}

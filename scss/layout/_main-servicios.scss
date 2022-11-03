@@ -1,0 +1,18 @@
+main{
+    .botline{
+        display: flex;
+        align-items: center;
+        height: 65px;
+        background-color: black;
+        p{
+            padding: 7px;
+            font-family: 'Inter:wght@500', sans-serif;
+            color: white;
+            font-size: 35px; 
+        }
+        img{
+            padding: 15px;
+            margin-left: 65px;
+        }
+    }
+}
