@@ -135,7 +135,7 @@ main .container {
   gap: 39px 43px;
 }
 main .container .card {
-  background-color: rgb(240, 129, 34);
+  background-color: #F08122;
   width: 289px;
   height: 322px;
   position: relative;
@@ -148,16 +148,19 @@ main .container .card img {
   justify-content: center;
   align-items: center;
   position: absolute;
-  max-width: 100%;
-  max-height: auto;
+  border-radius: 2%;
+  opacity: 0.95;
+  width: 90%;
+  height: 307px;
 }
 main .container .card p {
   width: 261px;
   height: 50px;
   position: relative;
-  margin: 247px 3px -33px 1px;
+  margin: 247px 3px -10px 2px;
   font-size: 40px;
   color: white;
+  background-color: rgba(77, 77, 77, 0.89);
   font-family: "Inter:wght@400", sans-serif;
 }
 
@@ -176,38 +179,6 @@ main .botline p {
 main .botline img {
   padding: 15px;
   margin-left: 65px;
-}
-main .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 37px;
-  gap: 39px 43px;
-}
-main .container .card {
-  background-color: rgb(240, 129, 34);
-  width: 289px;
-  height: 322px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .container .card img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  max-width: 100%;
-  max-height: auto;
-}
-main .container .card p {
-  width: 261px;
-  height: 50px;
-  position: relative;
-  margin: 247px 3px -33px 1px;
-  font-size: 40px;
-  color: white;
-  font-family: "Inter:wght@400", sans-serif;
 }
 
 main .botline {
@@ -480,9 +451,11 @@ footer .copyright ul {
     width: 183px;
     height: 183px;
   }
+  main .container .card img {
+    height: 165px;
+  }
   main .container .card p {
-    margin-top: 111px;
-    margin-left: 5px;
+    margin: 125px 9px 11px 9px;
     font-size: 32px;
   }
   main .mapacontacto {

@@ -47,7 +47,7 @@ main{
         margin: 37px;
         gap: 39px 43px;
         .card{
-            background-color: rgb(240, 129, 34);
+            background-color: #F08122;
             width: 289px;
             height: 322px;
             position: relative;
@@ -59,16 +59,19 @@ main{
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                max-width: 100%;
-                max-height: auto;
+                border-radius: 2%;
+                opacity: 0.95;
+                width: 90%;
+                height: 307px;
             }
             p{
                 width: 261px;
                 height: 50px;
                 position: relative;
-                margin: 247px 3px -33px 1px;
+                margin: 247px 3px -10px 2px;
                 font-size: 40px;
                 color: white;
+                background-color: rgba(77, 77, 77, 0.89);
                 font-family: 'Inter:wght@400', sans-serif;
             }
         }

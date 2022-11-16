@@ -65,10 +65,12 @@
     .card{
         width: 183px;
         height: 183px;
+        img{
+            height: 165px;
+        }
     }
     .card p{
-    margin-top: 111px;
-    margin-left: 5px;
+    margin: 125px 9px 11px 9px;
     font-size: 32px;
     }
     }
